@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets\styles.css">
+        <titel>Timed Coding Quiz</titel>
+    </head>
+
+    <body>  
+        <h1>Coding Quiz Challenge!</h1>
+        <p>Press the start button to start the quiz, and a time will begin! Answer each
+            question to the best of you knowledge! If you get a question wrong time will 
+            be deducted from the total amount of time left. This quiz will record a score
+            and you will be prompted to add a name to be known by when it is stored in the 
+            highscore section!
+        </p>   
+        <button id="start" >Start</button>
+    <div id="quiz" style="display: none;">
+        <div id="question"></div>
+        <div id="timer"></div>
+        <div class="choices">
+            <div class="choice" id="A" onclick="checkanswer('A')">A</div>
+            <div class="choice" id="B" onclick="checkanswer('B')">B</div>
+            <div class="choice" id="C" onclick="checkanswer('C')">C</div>
+            <div class="choice" id="D" onclick="checkanswer('D')">D</div>
+        </div>
+        <div class="score" id="score">0</div>
+    </div>
+    <div class="scoreboard" style="display: none;"></div>
+    <script src="assets/script.js"></script>
+    </body>
+</html>
