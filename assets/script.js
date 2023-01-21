@@ -1,3 +1,5 @@
+
+// selecting all the elements that make up the game
 var start = document.getElementById("start");
 var quiz = document.getElementById("quiz");
 var question = document.getElementById("question");
@@ -5,6 +7,7 @@ var timer = document.getElementById("timer");
 var score = document.getElementById("score");
 var highscores = document.getElementById("scoreboard");
 
+// selecting all the answer choices
 var choiceA = document.getElementById("A");
 var choiceB = document.getElementById("B");
 var choiceC = document.getElementById("C");
@@ -13,6 +16,7 @@ var choiceD = document.getElementById("D");
 var quizTime = 60;
 let timeOut= 0;
 let countDown;
+var scoreCount = 0;
 
 var question1 = {
     question: "this is place holder for question 1",
@@ -47,6 +51,10 @@ var question4 = {
     choiceD: "this is place holder for question4 choiceD",
     correct: "A"
 }
+const A = "A";
+const B = "B";
+const C = "C";
+const D = "D";
 
 let questions = [question1,question2,question3,question4];
 
@@ -61,12 +69,17 @@ function renderQuestion(){
     choiceC.innerHTML = q.choiceC;
     choiceD.innerHTML = q.choiceD;
 }
+function timePenalty(){
+    quizTime -= 5;  
+}
 
 function addScore(){
-    score.innerHTML += 10;
+    scoreCount += 10;
+    score.innerHTML = scoreCount;
 }
 
 function timerRender(){
+   
     if (timeOut <= quizTime){
         timer.innerHTML = quizTime;
         quizTime--;
@@ -84,9 +97,8 @@ function timerRender(){
 }
 
 function checkAnswer(answer){
-    if(questions[runningQuestionIndex].correct == answer){
-        addScore();
-        answerIsCorrect();
+    if(answer == questions[runningQuestionIndex].correct){
+       answerIsCorrect();
     }else{
         answerIsWrong();
     }
@@ -98,13 +110,25 @@ function checkAnswer(answer){
         scoreBoardRender();
     }
 }
-start.addEventListener("click",startQuiz);
+
+function answerIsCorrect(){
+    addScore();
+}
+
+
+function answerIsWrong(){
+    timePenalty();   
+}
+
+
 
 function startQuiz(){
     start.style.display = "none";
-    
-    countDown = setInterval(timerRender,1000);
-    timerRender();
     renderQuestion();
     quiz.style.display = "block";
+    countDown = setInterval(timerRender,1000);
+    timerRender();
 }
+
+
+start.addEventListener("click",startQuiz);
