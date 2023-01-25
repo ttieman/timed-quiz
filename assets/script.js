@@ -26,37 +26,37 @@ var scoreCount = 0;
 var endGameScore;
 
 var question1 = {
-    question: "this is place holder for question 1",
-    choiceA: "this is place holder for question1 choiceA",   //first question object
-    choiceB: "this is place holder for question1 choiceB",
-    choiceC: "this is place holder for question1 choiceC",
-    choiceD: "this is place holder for question1 choiceD",
-    correct: "A"
+    question: "Which of the following is not a valid HTML element?",
+    choiceA: "A. div",   //first question object
+    choiceB: "B. img",
+    choiceC: "C. javascript",
+    choiceD: "D. footer",
+    correct: "C"
 }
 var question2 = {
-    question: "this is place holder for question 2",
-    choiceA: "this is place holder for question2 choiceA",
-    choiceB: "this is place holder for question2 choiceB",      // second question object
-    choiceC: "this is place holder for question2 choiceC",
-    choiceD: "this is place holder for question2 choiceD",
+    question: "How do you add a CSS class to an HTML element?",
+    choiceA: "A. class=\"class-name\"",
+    choiceB: "D. style=\"class-name\"",      // second question object
+    choiceC: "C. classname=\"class-name\"",
+    choiceD: "D. class:class-name;",
     correct: "A"
 
 }
 var question3 = {
-    question: "this is place holder for question 3",
-    choiceA: "this is place holder for question3 choiceA",  // third question object
-    choiceB: "this is place holder for question3 choiceB",
-    choiceC: "this is place holder for question3 choiceC",
-    choiceD: "this is place holder for question3 choiceD",
+    question: "What is the correct syntax for creating a JavaScript function?",
+    choiceA: "A. function myFunction()",  // third question object
+    choiceB: "B. function:myFunction()",
+    choiceC: "C. myFunction()",
+    choiceD: "D. ${myFunction}",
     correct: "A"
 }
 var question4 = {
-    question: "this is place holder for question 4",
-    choiceA: "this is place holder for question4 choiceA",
-    choiceB: "this is place holder for question4 choiceB",      //4 question object
-    choiceC: "this is place holder for question4 choiceC",
-    choiceD: "this is place holder for question4 choiceD",
-    correct: "A"
+    question: "Which of the following is not a valid CSS property?",
+    choiceA: "A. color",
+    choiceB: "B. font-size",      //4 question object
+    choiceC: "C. text-align",
+    choiceD: "D. rotate",
+    correct: "D"
 }
 const A = "A";
 const B = "B";      // initialize the answer check with constants equivalent to the answer clicked
