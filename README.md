@@ -12,11 +12,11 @@ A timed multiple choice quiz utilizing JavaScript and web api's. When the user o
 
 ## Screenshot
 
-![alt = "A screenshot of the password generator"](assets\screenshots\screenshot_1.png)
+![alt = "A screenshot of the start menu"](assets/screenshots/screenshot_1.png)
 
-![alt = "A screenshot of the password generator"](assets\screenshots\screenshot_2.png)
+![alt = "A screenshot of a question"](assets/screenshots/screenshot_2.png)
 
-![alt = "A screenshot of the password generator"](assets\screenshots\screenshot_3.png)
+![alt = "a screenshot of the scored board"](assets/screenshots/screenshot_3.png)
 
 ## Link
 
