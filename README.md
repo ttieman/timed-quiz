@@ -20,6 +20,8 @@ A timed multiple choice quiz utilizing JavaScript and web api's. When the user o
 
 ## Link
 
+[file:https://ttieman.github.io/timed-quiz/](doc:https://ttieman.github.io/timed-quiz/)
+
 ## License
 
     MIT
